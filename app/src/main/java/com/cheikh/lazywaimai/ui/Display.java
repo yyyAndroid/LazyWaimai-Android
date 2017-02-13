@@ -37,10 +37,10 @@ import com.cheikh.lazywaimai.util.RegisterStep;
 
 public class Display {
 
-    public static final String PARAM_ID = "_id";
-    public static final String PARAM_OBJ = "_obj";
+    public static final String PARAM_ID = "_id";//参数Id
+    public static final String PARAM_OBJ = "_obj";//参数对象
 
-    private final AppCompatActivity mActivity;
+    private final AppCompatActivity mActivity;//activityUI
 
     public Display(AppCompatActivity activity) {
         mActivity = Preconditions.checkNotNull(activity, "activity cannot be null");

@@ -65,6 +65,7 @@ public class MainActivity extends BaseActivity<MainController.MainUiCallbacks>
 
         mViewPager.setOffscreenPageLimit(pages.size());
         mViewPager.setAdapter(adapter);
+
         mViewpagerTab.setCustomTabView(new SmartTabLayout.TabProvider() {
             @Override
             public View createTabView(ViewGroup container, int position, PagerAdapter adapter) {

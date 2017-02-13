@@ -22,15 +22,35 @@ public abstract class BaseRefreshHeaderView extends FrameLayout {
         super(context, attrs, defStyleAttr);
     }
 
+    /**
+     * 开始
+     */
     public abstract void onBegin();
 
+    /**
+     *下拉
+     * @param fraction 下拉因子
+     */
     public abstract void onPull(float fraction);
 
+    /**
+     * 释放
+      */
     public abstract void onRelease();
 
+    /**
+     * 刷新中
+     */
     public abstract void onRefreshing();
 
+    /**
+     * 完成
+     */
     public abstract void onComplete();
 
+    /**
+     * 获取配置
+     * @return
+     */
     public abstract HeaderConfig getConfig();
 }
