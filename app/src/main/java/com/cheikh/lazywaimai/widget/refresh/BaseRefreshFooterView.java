@@ -13,7 +13,13 @@ public abstract class BaseRefreshFooterView extends FrameLayout {
         super(context);
     }
 
+    /**
+     * 加载更多
+     */
     public abstract void onLoadMore();
 
+    /**
+     * 完成
+     */
     public abstract void onComplete();
 }
